@@ -1,26 +1,44 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --orange: #f26a1f;
+  --orange-light: #ff8845;
+  --black: #0e0e0e;
+  --black-soft: #1a1a1a;
+  --black-card: #232323;
+  --cream: #faf6ee;
+  --teal: #2db5b8;
+  --yellow: #f5c518;
+  --red: #e63946;
+  --green: #4caf50;
+  --blue: #1976d2;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--black);
+  color: var(--cream);
+  line-height: 1.6;
+  overflow-x: hidden;
 }
+
+.color-stripe {
+  height: 4px;
+  background: linear-gradient(90deg,
+    var(--teal) 0 20%, var(--yellow) 20% 40%,
+    var(--red) 40% 60%, var(--green) 60% 80%,
+    var(--blue) 80% 100%);
+}
+
+.color-stripe-6 {
+  height: 6px;
+  background: linear-gradient(90deg,
+    var(--teal) 0 20%, var(--yellow) 20% 40%,
+    var(--red) 40% 60%, var(--green) 60% 80%,
+    var(--blue) 80% 100%);
+}
+
+/* GSAP initial hidden state for scroll reveals */
+.reveal { opacity: 0; transform: translateY(40px); }
