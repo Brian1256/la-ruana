@@ -44,7 +44,7 @@ export default function Hero() {
 
   return (
     <section
-      className="relative w-screen min-h-[92vh] flex items-center px-6 py-20 overflow-hidden"
+      className="relative w-full min-h-[92vh] flex items-center px-6 py-20 overflow-hidden"
       style={{ background: "var(--black)" }}
     >
       {/* Color stripe top */}

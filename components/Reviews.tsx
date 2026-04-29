@@ -57,7 +57,7 @@ export default function Reviews() {
   }, []);
 
   return (
-    <section className="w-screen py-24 px-6" style={{ background: "var(--black)" }}>
+    <section className="w-full py-24 px-6" style={{ background: "var(--black)" }}>
       <div className="max-w-5xl mx-auto">
         <div ref={headerRef} className="text-center mb-14">
           <span

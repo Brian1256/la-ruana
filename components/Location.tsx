@@ -57,7 +57,7 @@ export default function Location() {
     <section
       ref={sectionRef}
       id="location"
-      className="w-screen py-24 px-6"
+      className="w-full py-24 px-6"
       style={{ background: "var(--black-soft)" }}
     >
       <div className="max-w-5xl mx-auto">

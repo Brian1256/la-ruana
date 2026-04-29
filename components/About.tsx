@@ -38,7 +38,7 @@ export default function About() {
     <section
       ref={sectionRef}
       id="about"
-      className="w-screen py-24 px-6 overflow-hidden"
+      className="w-full py-24 px-6 overflow-hidden"
       style={{ background: "var(--black-soft)" }}
     >
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">

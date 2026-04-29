@@ -44,7 +44,7 @@ export default function Gallery() {
   }, []);
 
   return (
-    <section className="w-screen py-24 px-6" style={{ background: "var(--black-soft)" }}>
+    <section className="w-full py-24 px-6" style={{ background: "var(--black-soft)" }}>
       <div className="max-w-5xl mx-auto">
         <div ref={headerRef} className="text-center mb-14">
           <span

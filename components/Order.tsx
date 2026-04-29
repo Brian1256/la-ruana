@@ -74,7 +74,7 @@ export default function Order() {
     <section
       ref={sectionRef}
       id="order"
-      className="w-screen py-24 px-6 relative overflow-hidden"
+      className="w-full py-24 px-6 relative overflow-hidden"
       style={{ background: "var(--yellow)", color: "var(--black)" }}
     >
       <div className="color-stripe absolute top-0 left-0 right-0" />
